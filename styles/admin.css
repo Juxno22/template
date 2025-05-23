@@ -1,0 +1,144 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+/*
+#07AE8B
+#6A5492
+*/
+.header {
+    background-color: #6A5492;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+}
+
+.header .logo h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+
+.header .logout img {
+    width: 35px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    background-color: #6A5492;
+    width: 20%;
+    height: calc(100vh - 60px);
+    padding-top: 20px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin: 10px 0;
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+
+.menu-list a:hover {
+    background-color:#07AE8B;
+    color: black;
+}
+
+.main-dashboard {
+    flex: 1;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.add {
+    background-color: #07AE8B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.add a{
+    color: #fff;
+    text-decoration: none;
+}
+.add:hover {
+    background-color: #6A5492;
+}
+
+.users {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.main-dashboard h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.user-list table {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+user-list table th,
+.user-list table td {
+    padding: 5px;
+    text-align: left;
+}
+.user-list .actions {
+    display: flex;
+    gap: 8px;
+}
+.user-list .edit {
+    background-color: #07AE8B;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.user-list .edit a{
+    color: #fff;
+    text-decoration: none;
+}
+.user-list .edit:hover {
+    background-color: #6A5492;
+}
+.user-list .delete {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.user-list .delete a{
+    color: #fff;
+    text-decoration: none;
+}
+.user-list .delete:hover {
+    background-color: #ff1a1a;
+}

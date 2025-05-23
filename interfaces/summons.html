@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presea STEM</title>
+    <link rel="stylesheet" href="../styles/summons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>Presea STEM</h1>
+        </div>
+        <div class="logout">
+            <img src="../images/logout.png" alt="Salir" style="width: 35px" <a href="#">
+        </div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <ul class="menu-list">
+                <li><a href="./main.html">Gestion de Usuarios</a></li>
+                <li><a href="./rubric.html">Rubricas</a></li>
+                <li><a href="./summons.html">Convocatorias</a></li>
+                <li><a href="./reports.html">Reportes</a></li>
+                <li><a href="./admin.html">Administracion</a></li>
+                <li><a href="./maintenance.html">Mantenimiento</a><ul></ul></li>
+        </div>
+        <div class="main-dashboard">
+            <div class="options">
+                <div class="search-container">
+                    <img src="../images/search.png" alt="Buscar" class="search-icon">
+                    <input type="text" placeholder="Buscar..." id="buscador">
+                </div>
+                <div class="assign">
+                    <button class="assign-button"><a href="./createSummons.html">Crear Convocatoria</a></button>
+                </div>
+                <div class="filter">
+                    <label for="orden">Mostar por:</label>
+                    <select id="orden" class="filter-select">
+                        <option value="region1">Region: Zona Sur Centro</option>
+                        <option value="region2">Region: Zona Metropolitana</option>
+                    </select>
+                </div>
+            </div>
+            <div class="list-candidates">
+                <div class="cards-container">
+                    <div class="card">
+                        <label for="cand1"></label>
+                        <h3 class="card-name">Titulo Convocatoria</h3>
+                        <p class="card-email">Fecha Inicio</p>
+                        <p class="card-email">Fecha Final</p>
+                        <p class="card-region">Sede</p>
+                        <p class="card-region">Region</p>
+                        <p class="card-email">Responsable</p>
+                        <div>
+                            <button class="card-button"><a href="./editSummons.html">Editar</a></button>
+                            <button class="card-button1"><a href="./summons.html">Borrar</a></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <label for="cand1"></label>
+                        <h3 class="card-name">Titulo Convocatoria</h3>
+                        <p class="card-email">Fecha Inicio</p>
+                        <p class="card-email">Fecha Final</p>
+                        <p class="card-region">Sede</p>
+                        <p class="card-region">Region</p>
+                        <p class="card-email">Responsable</p>
+                        <div>
+                            <button class="card-button"><a href="./editSummons.html">Editar</a></button>
+                            <button class="card-button1"><a href="./summons.html">Borrar</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

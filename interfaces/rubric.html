@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presea STEM</title>
+    <link rel="stylesheet" href="../styles/rubric.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>Presea STEM</h1>
+        </div>
+        <div class="logout">
+            <img src="../images/logout.png" alt="Salir" style="width: 35px" <a href="#">
+        </div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <ul class="menu-list">
+                <li><a href="./main.html">Gestion de Usuarios</a></li>
+                <li><a href="./rubric.html">Rubricas</a></li>
+                <li><a href="./summons.html">Convocatorias</a></li>
+                <li><a href="./reports.html">Reportes</a></li>
+                <li><a href="./admin.html">Administracion</a></li>
+                <li><a href="./maintenance.html">Mantenimiento</a><ul></ul></li>
+        </div>
+        <div class="main-dashboard">
+            <div class="options">
+                <div class="assign">
+                    <button class="assign-button">Agregar nueva Rubrica</button>
+                </div>
+                <div class="filter">
+                    <label for="orden">Mostar por año:</label>
+                    <select id="orden" class="filter-select">
+                        <option value="region1">Evaluacion 2024</option>
+                        <option value="region2">Evaluacion 2025</option>
+                    </select>
+                </div>
+            </div>
+            <div class="list-candidates">
+                <div class="cards-container">
+                    <div class="card">
+                        <h3 class="card-name">Titulo Evaluación</h3>
+                        <p class="card-email">Descripción</p>
+                        <p class="card-region">Región: Zona Sur Centro</p>
+                        <button class="card-button">Ver rubrica</button>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-name">Titulo Evaluación</h3>
+                        <p class="card-email">Descripción</p>
+                        <p class="card-region">Región: Zona Sur Centro</p>
+                        <button class="card-button">Ver rubrica</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

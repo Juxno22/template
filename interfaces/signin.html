@@ -1,0 +1,31 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presea STEM - Iniciar Sesión</title>
+    <link rel="stylesheet" href="../styles/signin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="auth-container">
+        <form class="auth-form" id="signin-form" action="main.html" method="get">
+            <h2>Iniciar Sesión</h2>
+            <div class="form-group">
+                <label for="signin-email">Correo electrónico</label>
+                <input type="email" id="signin-email" name="email" placeholder="usuario@ejemplo.com" required />
+            </div>
+            <div class="form-group">
+                <label for="signin-password">Contraseña</label>
+                <input type="password" id="signin-password" name="password" placeholder="******" required />
+            </div>
+            <button type="submit" class="btn-primary">Ingresar</button>
+        </form>
+    </div>
+</body>
+
+</html>

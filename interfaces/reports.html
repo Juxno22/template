@@ -1,0 +1,73 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presea STEM - Reportes</title>
+  <link rel="stylesheet" href="../styles/reports.css" />
+</head>
+<body>
+  <div class="header">
+    <div class="logo"><h1>Presea STEM</h1></div>
+    <div class="logout"><a href="signin.html"><img src="../images/logout.png" alt="Salir" /></a></div>
+  </div>
+  <div class="container">
+    <div class="menu">
+            <ul class="menu-list">
+                <li><a href="./main.html">Gestion de Usuarios</a></li>
+                <li><a href="./rubric.html">Rubricas</a></li>
+                <li><a href="./summons.html">Convocatorias</a></li>
+                <li><a href="./reports.html">Reportes</a></li>
+                <li><a href="./admin.html">Administracion</a></li>
+                <li><a href="./maintenance.html">Mantenimiento</a><ul></ul></li>
+        </div>
+    <main class="main-dashboard">
+      <h2>Reportes de Aspirantes</h2>
+      <section class="report-section">
+        <h3>Usuarios por Región</h3>
+        <div class="chart-bar">
+          <div class="bar" style="height: 120px;"></div>
+          <div class="bar" style="height: 95px;"></div>
+          <div class="bar" style="height: 150px;"></div>
+          <div class="bar" style="height: 200px;"></div>
+          <div class="bar" style="height: 80px;"></div>
+        </div>
+        <div class="labels">Norte Sur Centro Metro Occidente</div>
+      </section>
+      <section class="report-section">
+        <h3>Usuarios por Estado</h3>
+        <div class="chart-pie"></div>
+        <ul class="legend pie">
+          <li><span style="--clr:#9e309e;">Ciudad de México (180)</span></li>
+          <li><span style="--clr:#bf58be;">Jalisco (110)</span></li>
+          <li><span style="--clr:#ec67ea;">Nuevo León (130)</span></li>
+          <li><span style="--clr:#ff60a0;">Yucatán (70)</span></li>
+          <li><span style="--clr:#f5a1f5;">Puebla (90)</span></li>
+        </ul>
+      </section>
+      <section class="report-section">
+        <h3>Usuarios por Subsistema</h3>
+        <div class="chart-dots">
+          <div class="dot" style="--x:30%;--y:60%;"></div>
+          <div class="dot" style="--x:60%;--y:50%;"></div>
+        </div>
+        <ul class="legend dots">
+          <li><span>SEP (300)</span></li>
+          <li><span>ANUIES (250)</span></li>
+        </ul>
+      </section>
+      <section class="report-section">
+        <h3>Usuarios por Tipo de Universidad</h3>
+        <div class="chart-line">
+          <svg viewBox="0 0 200 100">
+            <polyline points="0,50 50,80 100,60 150,90 200,40" />
+          </svg>
+        </div>
+        <ul class="legend line">
+          <li><span>Públicas (350)</span></li>
+          <li><span>Privadas (200)</span></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

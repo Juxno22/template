@@ -1,0 +1,66 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+/*
+#07AE8B
+#6A5492
+*/
+.header {
+    background-color: #6A5492;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+}
+
+.header .logo h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+
+.header .logout img {
+    width: 35px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    background-color: #6A5492;
+    width: 20%;
+    height: calc(100vh - 60px);
+    padding-top: 20px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin: 10px 0;
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+
+.menu-list a:hover {
+    background-color:#07AE8B;
+    color: black;
+}
+
+.main-dashboard {
+    flex: 1;
+    padding: 40px;
+    background-color: #f9f9f9;
+}

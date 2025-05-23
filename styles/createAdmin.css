@@ -1,0 +1,138 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+/*
+#07AE8B
+#6A5492
+*/
+.header {
+    background-color: #6A5492;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+}
+
+.header .logo h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+
+.header .logout img {
+    width: 35px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    background-color: #6A5492;
+    width: 20%;
+    height: calc(100vh - 60px);
+    padding-top: 20px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin: 10px 0;
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+
+.menu-list a:hover {
+    background-color:#07AE8B;
+    color: black;
+}
+
+.main-dashboard {
+    flex: 1;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+.main-dashboard h2 {
+    margin-top: 0;
+    color: #333;;
+}
+
+.edit-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form-group input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-save {
+    background-color: #07AE8B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.btn-save a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-save:hover {
+    background-color: #6A5492;
+}
+
+.btn-cancel {
+    background-color: #ccc;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.btn-cancel:hover {
+    background-color: #bbb;
+}
