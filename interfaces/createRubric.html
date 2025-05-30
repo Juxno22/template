@@ -31,42 +31,35 @@
       </ul>
     </nav>
     <main class="main-dashboard">
-      <h2>Crear Convocatoria</h2>
+      <h2>Nueva Rubrica de Evaluación</h2>
       <form class="edit-form">
         <div class="form-group">
-          <label for="title">Título de Convocatoria</label>
-          <input type="text" id="title" name="title" value="Titulo Convocatoria" required />
+          <label for="title">Título de la Rubrica</label>
+          <input type="text" id="title" name="title" value="Evaluacion Estudiante" required />
         </div>
         <div class="form-group">
-          <label for="start-date">Fecha de Inicio</label>
-          <input type="date" id="start-date" name="start_date" value="2025-05-01" required />
+          <label for="title">Descripción de la Rubrica</label>
+          <input type="text" id="title" name="title" value="Instrumento de Evaluación" required />
         </div>
         <div class="form-group">
-          <label for="end-date">Fecha Final</label>
-          <input type="date" id="end-date" name="end_date" value="2025-06-01" required />
-        </div>
-        <div class="form-group">
-          <label for="region">Sede</label>
+          <label for="region">Año</label>
           <select id="region" name="region">
-            <option value="sur-centro">Zona Sur Centro</option>
-            <option value="metropolitana">Zona Metropolitana</option>
+            <option value="sur-centro">2025</option>
+            <option value="metropolitana">2024</option>
+            <option value="sur-centro">2023</option>
           </select>
-        </div>
-        <div class="form-group">
-          <label for="responsible">Link de acceso</label>
-          <input type="text" id="responsible" name="responsible" value="https://www.preseastem.com/" required />
         </div>
         <div class="form-group">
           <div class="doc">
             <iframe src="../images/ejemplo.pdf" frameborder="0" title="Vista previa PDF"></iframe>
             <a href="../documents/evidencia.pdf" download="evidencia.pdf" class="doc-download">
-              Convocatoria2025.pdf
+              Evaluacion2025.pdf
             </a>
           </div>
         </div>
         <div class="form-actions">
-          <button type="submit" class="btn-save"><a href="./summons.html">Guardar Convocatoria</a></button>
-          <a href="summons.html" class="btn-cancel">Cancelar</a>
+          <button type="submit" class="btn-save"><a href="./rubric.html">Guardar Convocatoria</a></button>
+          <a href="rubric.html" class="btn-cancel">Cancelar</a>
         </div>
       </form>
     </main>

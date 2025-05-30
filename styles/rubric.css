@@ -104,6 +104,10 @@ body {
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.container .main-dashboard .options .assign .assign-button a{
+    text-decoration: none;
+    color: white;
+}
 
 .container .main-dashboard .options .assign .assign-button:hover {
     background-color: #6A5492;
@@ -183,4 +187,30 @@ body {
 .card-button:hover {
   background-color: #6A5492;
   transform: translateY(-2px);
+}
+.form-group .doc {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group .doc iframe {
+    width: 160px;
+    height: 120px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group .doc-download {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #9e309e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-group .doc-download:hover {
+    text-decoration: underline;
 }

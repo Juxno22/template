@@ -29,18 +29,20 @@
                 <li><a href="./summons.html">Convocatorias</a></li>
                 <li><a href="./reports.html">Reportes</a></li>
                 <li><a href="./admin.html">Administracion</a></li>
-                <li><a href="./maintenance.html">Mantenimiento</a><ul></ul></li>
+                <li><a href="./maintenance.html">Mantenimiento</a>
+                    <ul></ul>
+                </li>
         </div>
         <div class="main-dashboard">
             <div class="options">
                 <div class="assign">
-                    <button class="assign-button">Agregar nueva Rubrica</button>
+                    <button class="assign-button"><a href="./createRubric.html">Agregar Rubrica</a></button>
                 </div>
                 <div class="filter">
                     <label for="orden">Mostar por año:</label>
                     <select id="orden" class="filter-select">
-                        <option value="region1">Evaluacion 2024</option>
-                        <option value="region2">Evaluacion 2025</option>
+                        <option value="region1">Evaluaciones 2024</option>
+                        <option value="region2">Evaluaciones 2025</option>
                     </select>
                 </div>
             </div>
@@ -49,14 +51,30 @@
                     <div class="card">
                         <h3 class="card-name">Titulo Evaluación</h3>
                         <p class="card-email">Descripción</p>
-                        <p class="card-region">Región: Zona Sur Centro</p>
-                        <button class="card-button">Ver rubrica</button>
+                        <p class="card-region">Año de Evaluación</p>
+                        <div class="form-group">
+                            <div class="doc">
+                                <iframe src="../images/ejemplo.pdf" frameborder="0" title="Vista previa PDF"></iframe>
+                                <a href="../documents/evidencia.pdf" download="evidencia.pdf" class="doc-download">
+                                    evalucionEstudiante2025.pdf
+                                </a>
+                            </div>
+                        </div>
+                        <button class="card-button">Descargar Rubrica</button>
                     </div>
                     <div class="card">
                         <h3 class="card-name">Titulo Evaluación</h3>
                         <p class="card-email">Descripción</p>
-                        <p class="card-region">Región: Zona Sur Centro</p>
-                        <button class="card-button">Ver rubrica</button>
+                        <p class="card-region">Año de Evaluación</p>
+                        <div class="form-group">
+                            <div class="doc">
+                                <iframe src="../images/ejemplo.pdf" frameborder="0" title="Vista previa PDF"></iframe>
+                                <a href="../documents/evidencia.pdf" download="evidencia.pdf" class="doc-download">
+                                    evaluacionEstudiante2024.pdf
+                                </a>
+                            </div>
+                        </div>
+                        <button class="card-button">Descargar Rubrica</button>
                     </div>
                 </div>
             </div>
