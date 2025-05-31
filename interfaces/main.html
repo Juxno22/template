@@ -13,13 +13,31 @@
 </head>
 
 <body>
+    <input type="checkbox" id="modal-toggle" hidden />
+    <input type="checkbox" id="notif-toggle" hidden />
     <div class="header">
         <div class="logo">
             <h1>Presea STEM</h1>
         </div>
-        <div class="logout">
-            <img src="../images/logout.png" alt="Salir" style="width: 35px" <a href="#">
+        <div class="header-icons">
+            <label for="notif-toggle" class="notif-button">
+                <img src="../images/bell.png" alt="Notificaciones" />
+            </label>
+            <a href="signin.html" class="logout">
+                <img src="../images/logout.png" alt="Salir" />
+            </a>
         </div>
+        <div class="notif-modal-overlay">
+        <div class="notif-modal-content">
+            <label for="notif-toggle" class="notif-close">&times;</label>
+            <h2>Notificaciones</h2>
+            <ul class="notif-list">
+                <li>Nuevo aspirante registrado.</li>
+                <li>Convocatoria cerrará mañana.</li>
+                <li>Evaluación pendiente para “Evaluador 2”.</li>
+            </ul>
+        </div>
+    </div>
     </div>
     <div class="container">
         <div class="menu">
@@ -29,7 +47,9 @@
                 <li><a href="./summons.html">Convocatorias</a></li>
                 <li><a href="./reports.html">Reportes</a></li>
                 <li><a href="./admin.html">Administracion</a></li>
-                <li><a href="./maintenance.html">Mantenimiento</a><ul></ul></li>
+                <li><a href="./maintenance.html">Mantenimiento</a>
+                    <ul></ul>
+                </li>
         </div>
         <div class="main-dashboard">
             <div class="options">
@@ -38,7 +58,7 @@
                     <input type="text" placeholder="Buscar..." id="buscador">
                 </div>
                 <div class="assign">
-                    <button class="assign-button">Asignar para Evaluar</button>
+                    <label for="modal-toggle" class="assign-button">Asignar para Evaluar</label>
                 </div>
                 <div class="filter">
                     <label for="orden">Mostar por:</label>
@@ -188,6 +208,29 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <label for="modal-toggle" class="modal-close">&times;</label>
+            <h2>Asignar Evaluación</h2>
+
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="cantidad">Cantidad de Aspirantes</label>
+                    <input type="number" id="cantidad" name="cantidad" value="5" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="evaluador">Evaluador</label>
+                    <select id="evaluador" name="evaluador" required>
+                        <option value="">Seleccione...</option>
+                        <option value="eva1">Evaluador 1</option>
+                        <option value="eva2">Evaluador 2</option>
+                        <option value="eva3">Evaluador 3</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-assign-modal">Asignar</button>
+            </form>
         </div>
     </div>
 </body>
