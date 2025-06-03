@@ -141,11 +141,39 @@ body {
 }
 
 .form-actions {
+    margin-top: 20px;
     display: flex;
     gap: 10px;
-    margin-top: 20px;
+    justify-content: flex-end;
 }
 
+.btn-primary {
+    background-color: #07AE8B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-secondary {
+    background-color: #6A5492;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #058e71;
+}
+
+.btn-secondary:hover {
+    background-color: #5a4679;
+}
 .btn-save {
     background-color: #07AE8B;
     color: #fff;
@@ -225,4 +253,18 @@ body {
 
 .form-group .redes-table th {
     background-color: #f0f0f0;
+}
+.filter {
+    margin-bottom: 20px;
+    font-size: 16px;
+    position: relative;
+    margin: 5px auto;
+}
+
+.filter-select {
+    width: 200px;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
 }

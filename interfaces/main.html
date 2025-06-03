@@ -31,11 +31,6 @@
         <div class="notif-modal-content">
             <label for="notif-toggle" class="notif-close">&times;</label>
             <h2>Notificaciones</h2>
-            <ul class="notif-list">
-                <li>Nuevo aspirante registrado.</li>
-                <li>Convocatoria cerrará mañana.</li>
-                <li>Evaluación pendiente para “Evaluador 2”.</li>
-            </ul>
         </div>
     </div>
     </div>
@@ -53,10 +48,6 @@
         </div>
         <div class="main-dashboard">
             <div class="options">
-                <div class="search-container">
-                    <img src="../images/search.png" alt="Buscar" class="search-icon">
-                    <input type="text" placeholder="Buscar..." id="buscador">
-                </div>
                 <div class="assign">
                     <label for="modal-toggle" class="assign-button">Asignar para Evaluar</label>
                 </div>
@@ -75,6 +66,14 @@
                         <option value="region1">Categoria 3</option>
                         <option value="region1">Categoria 4</option>
                         <option value="region1">Categoria 5</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="orden">Mostar:</label>
+                    <select id="orden" class="filter-select">
+                        <option value="region1">Aprobados</option>
+                        <option value="region2">No aprobados</option>
+                        <option value="region2">Sin evaluar</option>
                     </select>
                 </div>
             </div>

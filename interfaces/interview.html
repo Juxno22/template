@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presea STEM - Entrevista</title>
+    <link rel="stylesheet" href="../styles/interview.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>Presea STEM</h1>
+        </div>
+        <div class="logout">
+            <img src="../images/logout.png" alt="Salir" style="width: 35px">
+        </div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <ul class="menu-list">
+                <li><a href="./main.html">Gestion de Usuarios</a></li>
+                <li><a href="./rubric.html">Rubricas</a></li>
+                <li><a href="./summons.html">Convocatorias</a></li>
+                <li><a href="./reports.html">Reportes</a></li>
+                <li><a href="./admin.html">Administracion</a></li>
+                <li><a href="./maintenance.html">Mantenimiento</a></li>
+            </ul>
+        </div>
+        <div class="main-dashboard">
+            <h2>Entrevista del Aspirante</h2>
+            <div class="interview-details">
+                <div class="candidate-info">
+                    <h3>Información del Aspirante</h3>
+                    <p><strong>ID Aspirante:</strong> <span id="candidate-id"></span></p>
+                    <p><strong>Nombre:</strong> <span id="candidate-name"></span></p>
+                    <p><strong>Categoría:</strong> <span id="candidate-category"></span></p>
+                </div>
+                <div class="interview-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="fecha_entrevista">Fecha de Entrevista</label>
+                            <input type="datetime-local" id="fecha_entrevista" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="evaluadores">Evaluadores Presentes</label>
+                            <select id="evaluadores" multiple required>
+                                <option value="eval1">Evaluador 1</option>
+                                <option value="eval2">Evaluador 2</option>
+                                <option value="eval3">Evaluador 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="notas_entrevista">Notas de la Entrevista</label>
+                            <textarea id="notas_entrevista" rows="6" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="puntos_fuertes">Puntos Fuertes</label>
+                            <textarea id="puntos_fuertes" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="areas_mejora">Áreas de Mejora</label>
+                            <textarea id="areas_mejora" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="veredicto">Veredicto Final</label>
+                            <select id="veredicto" required>
+                                <option value="aprobado">Aprobado</option>
+                                <option value="no_aprobado">No Aprobado</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comentarios_adicionales">Comentarios Adicionales</label>
+                            <textarea id="comentarios_adicionales" rows="4"></textarea>
+                        </div>
+                        <div class="button-group">
+                            <button type="submit" class="btn-primary">Guardar Entrevista</button>
+                            <button type="button" class="btn-secondary">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

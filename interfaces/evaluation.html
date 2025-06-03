@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presea STEM - Evaluación</title>
+    <link rel="stylesheet" href="../styles/evaluation.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>Presea STEM</h1>
+        </div>
+        <div class="logout">
+            <img src="../images/logout.png" alt="Salir" style="width: 35px">
+        </div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <ul class="menu-list">
+                <li><a href="./main.html">Gestion de Usuarios</a></li>
+                <li><a href="./rubric.html">Rubricas</a></li>
+                <li><a href="./summons.html">Convocatorias</a></li>
+                <li><a href="./reports.html">Reportes</a></li>
+                <li><a href="./admin.html">Administracion</a></li>
+                <li><a href="./maintenance.html">Mantenimiento</a></li>
+            </ul>
+        </div>
+        <div class="main-dashboard">
+            <h2>Evaluación de Aspirante</h2>
+            <div class="evaluation-form">
+                <form>
+                    <div class="form-group">
+                        <label for="id_evaluacion">ID Evaluación</label>
+                        <input type="text" id="id_evaluacion" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label for="id_evaluador">ID Evaluador</label>
+                        <input type="text" id="id_evaluador" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label for="id_aspirante">ID Aspirante</label>
+                        <input type="text" id="id_aspirante" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label for="fase">Fase de Evaluación</label>
+                        <select id="fase" required>
+                            <option value="1">Fase 1 - Evaluación Inicial</option>
+                            <option value="2">Fase 2 - Entrevista</option>
+                            <option value="3">Fase 3 - Evaluación Final</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="calificacion">Calificación</label>
+                        <input type="number" id="calificacion" min="0" max="100" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="comentarios">Comentarios</label>
+                        <textarea id="comentarios" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="archivo_rubrica">Archivo de Rúbrica</label>
+                        <input type="file" id="archivo_rubrica" accept=".pdf,.doc,.docx" />
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado</label>
+                        <select id="estado" required>
+                            <option value="aprobado">Aprobado</option>
+                            <option value="no_aprobado">No Aprobado</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha de Evaluación</label>
+                        <input type="date" id="fecha" required />
+                    </div>
+                    <div class="button-group">
+                        <button type="submit" class="btn-primary">Guardar Evaluación</button>
+                        <button type="button" class="btn-secondary">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

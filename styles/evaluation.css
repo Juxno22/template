@@ -1,0 +1,134 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-color: #6A5492;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+}
+
+.header .logo h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+
+.header .logout img {
+    width: 35px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    background-color: #6A5492;
+    width: 20%;
+    height: calc(100vh - 60px);
+    padding-top: 20px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin: 10px 0;
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+
+.menu-list a:hover {
+    background-color: #07AE8B;
+    color: black;
+}
+
+.main-dashboard {
+    flex: 1;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.main-dashboard h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.evaluation-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.btn-primary {
+    background-color: #07AE8B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-secondary {
+    background-color: #6A5492;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #058e71;
+}
+
+.btn-secondary:hover {
+    background-color: #5a4679;
+}
